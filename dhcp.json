@@ -1,0 +1,166 @@
+{
+   "charts" : [
+      {
+         "y" : "1",
+         "options" : {
+            "pieHole" : 0,
+            "is3D" : false,
+            "title" : "Top Assigned IPs",
+            "vAxes" : [
+               {
+                  "minValue" : null,
+                  "viewWindow" : {
+                     "min" : null,
+                     "max" : null
+                  },
+                  "maxValue" : null,
+                  "useFormatFromData" : true
+               },
+               {
+                  "minValue" : null,
+                  "viewWindow" : {
+                     "min" : null,
+                     "max" : null
+                  },
+                  "maxValue" : null,
+                  "useFormatFromData" : true
+               }
+            ],
+            "hAxis" : {
+               "minValue" : null,
+               "viewWindow" : {
+                  "min" : null,
+                  "max" : null
+               },
+               "maxValue" : null,
+               "useFormatFromData" : true
+            },
+            "booleanRole" : "certainty",
+            "colors" : [
+               "#3366CC",
+               "#DC3912",
+               "#FF9900",
+               "#109618",
+               "#990099",
+               "#0099C6",
+               "#DD4477",
+               "#66AA00",
+               "#B82E2E",
+               "#316395",
+               "#994499",
+               "#22AA99",
+               "#AAAA11",
+               "#6633CC",
+               "#E67300",
+               "#8B0707",
+               "#651067",
+               "#329262",
+               "#5574A6",
+               "#3B3EAC",
+               "#B77322",
+               "#16D620",
+               "#B91383",
+               "#F4359E",
+               "#9C5935",
+               "#A9C413",
+               "#2A778D",
+               "#668D1C",
+               "#BEA413",
+               "#0C5922",
+               "#743411"
+            ]
+         },
+         "queries" : [
+            {
+               "query" : "class=BRO_DHCP \"68\" groupby:assigned_ip",
+               "label" : "class=BRO_DHCP \"68\" groupby:assigned_ip"
+            }
+         ],
+         "x" : "0",
+         "type" : "PieChart"
+      },
+      {
+         "y" : "2",
+         "options" : {
+            "pieHole" : 0,
+            "is3D" : false,
+            "hAxis" : {
+               "minValue" : null,
+               "viewWindow" : {
+                  "min" : null,
+                  "max" : null
+               },
+               "maxValue" : null,
+               "useFormatFromData" : true
+            },
+            "title" : "Top MACs",
+            "vAxes" : [
+               {
+                  "minValue" : null,
+                  "maxValue" : null,
+                  "viewWindow" : {
+                     "min" : null,
+                     "max" : null
+                  },
+                  "title" : null,
+                  "useFormatFromData" : true
+               },
+               {
+                  "minValue" : null,
+                  "viewWindow" : {
+                     "min" : null,
+                     "max" : null
+                  },
+                  "maxValue" : null,
+                  "useFormatFromData" : true
+               }
+            ],
+            "booleanRole" : "certainty",
+            "colors" : [
+               "#3366CC",
+               "#DC3912",
+               "#FF9900",
+               "#109618",
+               "#990099",
+               "#0099C6",
+               "#DD4477",
+               "#66AA00",
+               "#B82E2E",
+               "#316395",
+               "#994499",
+               "#22AA99",
+               "#AAAA11",
+               "#6633CC",
+               "#E67300",
+               "#8B0707",
+               "#651067",
+               "#329262",
+               "#5574A6",
+               "#3B3EAC",
+               "#B77322",
+               "#16D620",
+               "#B91383",
+               "#F4359E",
+               "#9C5935",
+               "#A9C413",
+               "#2A778D",
+               "#668D1C",
+               "#BEA413",
+               "#0C5922",
+               "#743411"
+            ]
+         },
+         "queries" : [
+            {
+               "query" : "class=BRO_DHCP \"68\" groupby:mac",
+               "label" : "class=BRO_DHCP \"68\" groupby:mac"
+            }
+         ],
+         "x" : "0",
+         "type" : "PieChart"
+      }
+   ],
+   "auth_required" : "1",
+   "title" : "DHCP",
+   "alias" : "dhcp"
+}
